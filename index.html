@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Souls Quiz</title>
+</head>
+<body>
+
+<form name="quizForm">
+
+<h1>DARK SOULS QUIZ</h1>
+
+<div class="question" id="q1box">
+    <p>1. Which Dark Souls game introduced Estus Flasks?</p>
+    <input type="radio" name="q1" value="0"> Dark Souls 2<br>
+    <input type="radio" name="q1" value="1"> Dark Souls 1<br>
+    <input type="radio" name="q1" value="0"> Dark Souls 3<br>
+</div>
+
+<div class="question" id="q2box">
+    <p>2. Which bosses are optional? (Select all)</p>
+    <input type="checkbox" name="q2" value="1"> Sif, the Great Grey Wolf<br>
+    <input type="checkbox" name="q2" value="1"> Pinwheel<br>
+    <input type="checkbox" name="q2" value="0"> Iudex Gundyr<br>
+</div>
+
+<div class="question" id="q3box">
+    <p>3. What is the final boss area in Dark Souls 1?</p>
+    <select name="q3">
+        <option value="0">Drangleic Castle</option>
+        <option value="1">Kiln of the First Flame</option>
+        <option value="0">Untended Graves</option>
+    </select>
+</div>
+
+<div class="question" id="q4box">
+    <p>4. How many main Dark Souls games?</p>
+    <input type="number" name="q4">
+</div>
+
+<div class="question" id="q5box">
+    <p>5. Name an ancient god from Dark Souls (Gwyn, Nito, or Seath)</p>
+    <input type="text" name="q5">
+</div>
+
+<div class="question" id="q6box">
+    <p>6. Who is the tutorial boss at the start?</p>
+    <input type="radio" name="q6" value="1"> Iudex Gundyr<br>
+    <input type="radio" name="q6" value="0"> Asylum Demon<br>
+</div>
+
+<div class="question" id="q7box">
+    <p>7. Which games have Anor Londo? (Select all)</p>
+    <input type="checkbox" name="q7" value="1"> Dark Souls 1<br>
+    <input type="checkbox" name="q7" value="0"> Dark Souls 2<br>
+    <input type="checkbox" name="q7" value="1"> Dark Souls 3<br>
+</div>
+
+<div class="question" id="q8box">
+    <p>8. What enemy is in the Undead Parish?</p>
+    <select name="q8">
+        <option value="0">Dragon</option>
+        <option value="1">Undead Soldier</option>
+        <option value="0">Giant</option>
+    </select>
+</div>
+
+<div class="question" id="q9box">
+    <p>9. How many Lords of Cinder in Dark Souls 3?</p>
+    <input type="number" name="q9">
+</div>
+
+<div class="question" id="q10box">
+    <p>10. Whose sword is the Greatsword of Artorias?</p>
+    <input type="radio" name="q10" value="1"> Artorias, the Abyssal Knight<br>
+    <input type="radio" name="q10" value="0"> Sif, the Great Grey Wolf<br>
+</div>
+
+</form>
+
+<button onclick="evaluateQuiz()">Evaluate Quiz</button>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
